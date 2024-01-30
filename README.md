@@ -35,3 +35,25 @@ AAC.
 reproducción y las pistas. Se utiliza para representar esta relación de muchos a muchos.
 
 Y el Diagrama de Entidad Relación de la BD mencionada:
+
+![Texto alternativo](modeloBDA.png)
+
+
+### Enunciado:
+Habiendo descripto previamente la base de datos a la que el estudiante tiene acceso, y podrá descargar
+del link dispuesto para tal fin en el aula virtual, a continuación, describimos los requerimientos a
+desarrollar de forma previa para poder enforcarse, el día del parcial, específicamente en los
+requerimientos solicitados ese día:
+
+1. Construir un proyecto de Spring boot que soporte, Spring data para conectarse a la base de
+datos, Endpoints para dar respuesta a los requisitos aquí solicitados, Tests unitarios de estos
+requisitos y la estructura interna vista en clase y acordada para la implementación.
+  a. Puede o no usar lombok para la definición de las entidades y/o los dtos.
+  b. Puede o no usar dtos y mapeos
+2. Construir la estructura de endpoints CRUD (Crear, Obtener, Modificar y Borrar) para cada una de
+las siguientes tablas: customer, invoice, invoice_items, track, playlist_track, playlist.
+4. Para cada una de estas tablas se solicita al menos, capa de acceso a datos (Repositorio), capa de
+negocio (Servicio) y capa de Interfaz (Controlador), además evidentemente de la Entidad de
+datos.
+5. Tener en cuenta que la tabla playlist_track es una relación pura con lo que el requerimiento pasa
+por poder agregar o eliminar tracks a la playlist.
